@@ -36,4 +36,19 @@ fn main() {
     section::section_5::rust_while();
     section::section_5::rust_for();
     println!("-----------------");
+
+    println!("section6---------");
+    section::section_6::function();
+    println!("-----------------");
+
+    
+    println!("section7---------");
+    section::section_7::comment();
+    section::section_7::documentation(32);
+    println!("-----------------");
+
+    println!("section8---------");
+    section::section_8::struct_practice();
+    section::section_8::implementation();
+    println!("-----------------");
 }
