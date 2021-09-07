@@ -30,6 +30,12 @@ pub fn implementation() {
   println!("read() = {}, latest = {}", sensor.read(),sensor.latest);
 }
 
+pub fn related_function(){
+    let sensor = Sensor::new();
+    let latest = sensor.read();
+    println!("latest = {}", latest);
+}
+
 //構造体のメソッドと関連関数を定義する
 impl Sensor {
   //メソッドを定義する場合はメソッドの第一引数にself or &
@@ -41,5 +47,13 @@ impl Sensor {
   fn init(&mut self){
     self.active = true;
     self.latest = 42;
+  }
+
+
+  //関連関数
+  //引数でselfを受け取らない構造体の関数
+  //主にコンストラクタで使用する
+  fn new() -> Sensor {
+    Sensor{ active: false, latest: 0, }
   }
 }

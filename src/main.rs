@@ -50,5 +50,19 @@ fn main() {
     println!("section8---------");
     section::section_8::struct_practice();
     section::section_8::implementation();
+    section::section_8::related_function();
+    println!("-----------------");
+
+    println!("section9---------");
+    section::section_9::print_type(section::section_9::Type::Int);
+    section::section_9::print_type_bind(section::section_9::DefType::Float(64.5));
+    println!("-----------------");
+
+    println!("section10---------");
+    section::section_10::use_option();
+    section::section_10::use_result();
+    if let Err(e) = section::section_10::error_raise() {
+        println!("{:?}",e)
+    }
     println!("-----------------");
 }
