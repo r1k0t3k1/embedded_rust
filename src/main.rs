@@ -65,4 +65,14 @@ fn main() {
         println!("{:?}",e)
     }
     println!("-----------------");
+
+    println!("section11---------");
+    section::section_11::ownership();
+    section::section_11::copy();
+    section::section_11::_move();
+    println!("-----------------");
+
+    println!("section12---------");
+    section::section_12::generics();
+    println!("-----------------");
 }

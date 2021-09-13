@@ -1,4 +1,4 @@
-struct Sensor {
+pub struct Sensor {
   //センサが有効化されていれば、true 
   active: bool,
   //センサの最新の値を持っている
